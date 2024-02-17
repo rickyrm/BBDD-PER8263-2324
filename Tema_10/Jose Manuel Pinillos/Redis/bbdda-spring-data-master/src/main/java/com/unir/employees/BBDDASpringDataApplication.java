@@ -2,10 +2,10 @@ package com.unir.employees;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Arrays;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
+@EnableCaching
 public class BBDDASpringDataApplication {
 
 	/**
@@ -15,5 +15,4 @@ public class BBDDASpringDataApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BBDDASpringDataApplication.class, args);
 	}
-
 }
